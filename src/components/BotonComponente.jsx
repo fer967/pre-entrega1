@@ -1,4 +1,14 @@
-export default function BotonComponente({texto, callback, color}){
+
+/*export default function BotonComponente({texto, path}){
+    return(
+        <>
+        <button><Link to={path}></Link></button>
+        </>
+    )
+}
+
+//---- PP3 ---
+/*export default function BotonComponente({texto, callback, color}){
 
     const misEstilos={
         backgroundColor:color,
@@ -9,6 +19,6 @@ export default function BotonComponente({texto, callback, color}){
         <button onClick={callback} style={misEstilos}>{texto} </button>
         </>
     )
-}
+}*/
 
 

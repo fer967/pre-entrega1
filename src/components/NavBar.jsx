@@ -1,5 +1,8 @@
 
-import'./NavBar.css';
+
+
+//---- PE3----
+/*import'./NavBar.css';
 import BotonComponente from "./BotonComponente";
 
 export default function NavBar(){
@@ -21,5 +24,5 @@ export default function NavBar(){
         </nav>
         </>
     )
-}
+}*/
 
