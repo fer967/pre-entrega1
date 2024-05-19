@@ -1,4 +1,4 @@
-export default function HomeComponent(){
+export default function HomeComponent(){   // BrandComponent
     return(
         <>
         HomeComponent

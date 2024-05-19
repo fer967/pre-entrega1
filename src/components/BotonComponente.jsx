@@ -1,11 +1,5 @@
 
-/*export default function BotonComponente({texto, path}){
-    return(
-        <>
-        <button><Link to={path}></Link></button>
-        </>
-    )
-}
+
 
 //---- PP3 ---
 /*export default function BotonComponente({texto, callback, color}){

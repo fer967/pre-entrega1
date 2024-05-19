@@ -3,8 +3,9 @@ import './App.css';
 import HomeComponent from './components/HomeView/HomeComponent';
 import ProductsComponent from './components/ProductsView/ProductsComponent';
 import ContactComponent from './components/ContactView/ContactComponent';
-import NavBar from './components/NavBar';
+import NavBar from './components/navigation/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SingleProd from './components/ProductView/SingleProd';
 
 function App() {
     return(
@@ -12,12 +13,13 @@ function App() {
         <BrowserRouter>
         <NavBar/>
         <Routes>
-            <Route exact path='/' element={<HomeComponent/>}/>
-            <Route exact path='/products' element={<ProductsComponent/>}/>
-            <Route exact path='/contact' element={<ContactComponent/>}/>
+            <Route exact path='/' element={<HomeComponent/>}/>               // BrandComponent
+            <Route exact path='/products' element={<ProductsComponent/>}/>   // Category/:categoryName
+            <Route exact path='/product/:proId' element={<SingleProd/>}/>    // ItemDetailContainer 
+            <Route exact path='/contact' element={<ContactComponent/>}/>     // no va
         </Routes>
         </BrowserRouter>
-        </>
+        </>                                                                  // ItemListContainer ??
     )
 }
 
