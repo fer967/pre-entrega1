@@ -1,25 +1,27 @@
 
+
+
+
 import './App.css';
-import HomeComponent from './components/HomeView/HomeComponent';
 import ProductsComponent from './components/ProductsView/ProductsComponent';
-import ContactComponent from './components/ContactView/ContactComponent';
 import NavBar from './components/navigation/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SingleProd from './components/ProductView/SingleProd';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
     return(
         <>
         <BrowserRouter>
         <NavBar/>
+        <ItemListContainer/>
         <Routes>
-            <Route exact path='/' element={<HomeComponent/>}/>               // BrandComponent
-            <Route exact path='/products' element={<ProductsComponent/>}/>   // Category/:categoryName
-            <Route exact path='/product/:proId' element={<SingleProd/>}/>    // ItemDetailContainer 
-            <Route exact path='/contact' element={<ContactComponent/>}/>     // no va
+            <Route exact path='/' element={<ProductsComponent/>}/>               
+            <Route exact path='/product/:proId' element={<SingleProd/>}/>    
+            <Route exact path='/contact' element={<ContactComponent/>}/>     
         </Routes>
-        </BrowserRouter>
-        </>                                                                  // ItemListContainer ??
+        </BrowserRouter>           
+        </>
     )
 }
 
