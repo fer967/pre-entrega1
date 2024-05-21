@@ -68,24 +68,13 @@ const products = [
 export const getProducts = new Promise((resolve) =>{
     setTimeout(() => {
         resolve(products);
-    }, 3000);
+    }, 2000);
 });
 
-
-// getProduct tambien es promise
 export const getProduct = (id) => {
     return products.find((prod) => prod.id == id);
 };
 
-
-// getCategory usa filter y setTimeout
-/*export const getCategory = new Promise((resolve)=>{
-    setTimeout(()=>{
-        resolve(products.filter((prod)=>prod.category==category))
-    }, 2000)
-});*/
-
-// otra forma
 export const getCategory = (category)=>{
     return products.filter((prod)=>prod.category==category);
 };
