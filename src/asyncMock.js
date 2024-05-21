@@ -86,7 +86,7 @@ export const getProduct = (id) => {
 });*/
 
 // otra forma
-/*export const getCategory = (category)=>{
+export const getCategory = (category)=>{
     return products.filter((prod)=>prod.category==category);
-} */
+};
 

@@ -13,7 +13,7 @@ export default function ProductsComponent() {        // BrandComponent
     return (
         <>
         <h1>Nuestros Productos</h1>
-            <article>
+            <article style={{display:'flex', gap:10}}>
                 {products.map(product => (<ProductCard title={product.title} price={product.price} image={product.image} idProd={product.id} />))}
             </article>
         </>

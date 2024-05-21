@@ -6,8 +6,12 @@ import './App.css';
 import ProductsComponent from './components/ProductsView/ProductsComponent';
 import NavBar from './components/navigation/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SingleProd from './components/ProductView/SingleProd';
+import ItemDetailContainer from './components/ProductView/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
+import CuerdasComponent from './components/CuerdasView/CuerdasComponent';
+import VientosComponent from './components/VientosView/VientosComponent';
+import PercusionComponent from './components/PercusionView/PercusionComponent';
+import TecladosComponent from './components/TecladosView/TecladosComponent';
 
 function App() {
     return(
@@ -17,8 +21,11 @@ function App() {
         <ItemListContainer/>
         <Routes>
             <Route exact path='/' element={<ProductsComponent/>}/>               
-            <Route exact path='/product/:proId' element={<SingleProd/>}/>    
-            <Route exact path='/contact' element={<ContactComponent/>}/>     
+            <Route exact path='/product/:proId' element={<ItemDetailContainer/>}/> 
+            <Route exact path='/category/:categoryName' element={<CuerdasComponent/>}/>
+            <Route exact path='/vientos' element={<VientosComponent/>}/>
+            <Route exact path='/percusion' element={<PercusionComponent/>}/>
+            <Route exact path='/teclados' element={<TecladosComponent/>}/>
         </Routes>
         </BrowserRouter>           
         </>

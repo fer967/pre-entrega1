@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { getProduct } from "../../asyncMock";
 import { useEffect, useState } from "react";
 
-export default function SingleProd(){             //ItemDetailContainer
+export default function ItemDetailContainer(){             
     const[product, setProduct] = useState({});
     const{proId} = useParams();
     useEffect(() => {
@@ -10,7 +10,7 @@ export default function SingleProd(){             //ItemDetailContainer
     }, [])
     return(
         <>
-        <h1>SingleProd</h1>
+        <h1>Detalles del producto</h1>
         <p>id: {proId}</p>
         <h3>nombre: {product.title}</h3>
         <p>precio: {product.price}</p>
