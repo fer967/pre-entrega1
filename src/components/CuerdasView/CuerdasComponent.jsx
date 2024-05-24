@@ -14,7 +14,7 @@ export default function CuerdasComponent(){
         <>
         <h2>instrumentos de cuerdas</h2>
         <article>
-        {products.filter(product => product.category==categoryName)}
+        {products.filter(product => product.category==cuerdas)}
         </article>
         </>
     );

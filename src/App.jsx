@@ -20,10 +20,10 @@ function App() {
         <NavBar/>
         <ItemListContainer/>
         <Routes>
-            <Route exact path='/' element={<ProductsComponent/>}/>               
+            <Route exact path='/' element={<ProductsComponent/>}/>                    // ItemListContainer             
             <Route exact path='/product/:proId' element={<ItemDetailContainer/>}/> 
-            <Route exact path='/category/:categoryName' element={<CuerdasComponent/>}/>
-            <Route exact path='/vientos' element={<VientosComponent/>}/>
+            <Route exact path='/category/:categoryName' element={<CuerdasComponent/>}/>    // una sola ruta para category
+            <Route exact path='/vientos' element={<VientosComponent/>}/>                 // y tambien mostrar comp ItemLC
             <Route exact path='/percusion' element={<PercusionComponent/>}/>
             <Route exact path='/teclados' element={<TecladosComponent/>}/>
         </Routes>
