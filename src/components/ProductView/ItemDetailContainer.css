@@ -1,3 +1,11 @@
+.itemContainer{
+    height: 80vh;
+    background-color: lavenderblush;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .detalle{
     width: 22vw;
     background-color: lightgrey;
