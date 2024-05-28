@@ -10,6 +10,7 @@ export default function ItemListContainer() {
     useEffect(() => {
         getProducts.then(data => setProducts(data));
     }, [])
+
     return (
         <>
             <div className='container'>

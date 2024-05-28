@@ -9,11 +9,12 @@ export default function CategoryComponent() {
     const { categoryName } = useParams();
     useEffect(() => {
         setCategory(getCategory(categoryName))
-    }, []);
+    }, [categoryName]);
     return (
         <>
             <div className="category">
-                {category.map((prod) => (<ProductCard title={prod.title} price={prod.price}/>))}
+                {category.map((prod) => (<ProductCard title={prod.title} price={prod.price} 
+                image={prod.image} idProd={prod.id} />))}
             </div>
         </>
     );
